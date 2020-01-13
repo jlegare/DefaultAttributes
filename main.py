@@ -1,3 +1,5 @@
+import os
+import os.path
 import sys
 
 from lxml import etree
@@ -21,9 +23,14 @@ def walk (element, indentation):
 
 if __name__ == "__main__":
     if len(sys.argv) > 1:
+        if len(sys.argv) > 2:
+            # XML_CATALOG_FILES is a space-separated list of URLs.
+            #
+            catalogs = os.environ["XML_CATALOG_FILES"].split (" ") if "XML_CATALOG_FILES" in os.environ else [ ]
+            catalogs.append (os.path.abspath (sys.argv[2]))
+            os.environ["XML_CATALOG_FILES"] = " ".join (catalogs)
+
         main (sys.argv[1])
 
     else:
         print ("ERROR: An input file name must be specified on the command-line.")
-
-
