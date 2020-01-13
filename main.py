@@ -3,7 +3,7 @@ import sys
 from lxml import etree
 
 def main (file_name):
-    parser = etree.XMLParser ()
+    parser = etree.XMLParser (attribute_defaults = True, dtd_validation = True)
     tree   = etree.parse (file_name, parser)
 
     walk (tree.getroot (), 0)
