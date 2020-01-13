@@ -2,8 +2,5 @@
 <!DOCTYPE catalog PUBLIC "-//OASIS//DTD Entity Resolution XML Catalog V1.0//EN"
                          "http://www.oasis-open.org/committees/entity/release/1.0/catalog.dtd">
 <catalog xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog" prefer="public">
-  <public publicId="-//JL//DTD 003//EN" uri="entities/003.dtd"/>
-  <public publicId="-//JL//DTD 004//EN" uri="entities/004.dtd"/>
-
-  <nextCatalog catalog="entities/more_entities/catalog.xml"/>
+  <public publicId="-//JL//DTD 004a//EN" uri="004a.dtd"/>
 </catalog>
