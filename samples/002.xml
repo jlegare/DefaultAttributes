@@ -1,0 +1,5 @@
+<!DOCTYPE a SYSTEM "002.dtd">
+<a>
+  <b b.a="two">Hello, World!</b>
+  <b>Salut, Monde!</b>
+</a>
