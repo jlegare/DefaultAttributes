@@ -1,0 +1,9 @@
+<!DOCTYPE a [
+<!ELEMENT a (b)+>
+<!ELEMENT b (#PCDATA)>
+<!ATTLIST b b.a CDATA "one">
+]>
+<a>
+  <b b.a="two">Hello, World!</b>
+  <b>Salut, Monde!</b>
+</a>
